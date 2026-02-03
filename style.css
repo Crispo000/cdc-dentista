@@ -72,13 +72,13 @@ section p {
 
 /* IMMAGINE RITRATTO */
 .hero-img {
-  width: 300px;        /* Imposta una larghezza fissa, puoi regolarla */
-  height: 200px;       /* Imposta un’altezza fissa */
+  width: 500px;        /* Imposta una larghezza fissa, puoi regolarla */
+  height: 350px;       /* Imposta un’altezza fissa */
   border-radius: 0;    /* Rimuove l'effetto circolare */
-  border: 3px solid #b89b5e;
+  border: 5px solid #b89b5e;
   object-fit: cover; /* Assicura che l'immagine riempia il contenitore senza deformarsi */
   display: block;
-  margin: 50px auto 0; /* Centra verticalmente con margine */
+  margin: 70px auto 0; /* Centra verticalmente con margine */
 }
 
 /* NAV */
