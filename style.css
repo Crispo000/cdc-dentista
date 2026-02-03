@@ -132,9 +132,12 @@ footer {
 }
 .studio-img {
   width: 100%;
-  max-width: 800px;
-  margin-top: 40px;
-  border-radius: 12px;
+  max-width: 600px;   /* più piccola */
+  margin: 50px auto 0;
+  border-radius: 14px;
+  display: block;
+}
+
 }
 section p {
   font-size: 19px;
@@ -155,4 +158,18 @@ section p {
   border-radius: 50%;
   text-decoration: none;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 42px;
+  }
+
+  .hero-img {
+    width: 180px;
+  }
 }
