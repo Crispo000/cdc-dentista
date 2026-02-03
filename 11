@@ -1,0 +1,152 @@
+cdc-dentista/
+│
+├── index.html
+├── style.css
+└── script.js
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>CDC | Dott. Cristian Davide Crispino</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Studio odontoiatrico del Dott. Cristian Davide Crispino. Cura, estetica e attenzione al paziente.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="hero">
+  <nav>
+    <h1>CDC</h1>
+    <a href="#contatti" class="btn">Prenota una visita</a>
+  </nav>
+
+  <div class="hero-text">
+    <h2>Cura, estetica e innovazione<br>per il tuo sorriso</h2>
+    <p>Professionalità, eleganza e attenzione autentica al paziente</p>
+  </div>
+</header>
+
+<section class="about">
+  <h3>Dott. Cristian Davide Crispino</h3>
+  <p>
+    Medico odontoiatra con un approccio orientato alla qualità, all’estetica e al benessere globale del paziente.
+    Ogni trattamento nasce dall’ascolto, dalla precisione e dall’utilizzo di tecnologie moderne.
+  </p>
+</section>
+
+<section class="services">
+  <h3>Trattamenti</h3>
+  <div class="grid">
+    <div>Implantologia e protesi dentaria</div>
+    <div>Odontoiatria e medicina estetica</div>
+    <div>Conservativa ed Endodonzia</div>
+    <div>Parodontologia e Chirurgia orale</div>
+    <div>Ortodonzia fissa e invisibile</div>
+  </div>
+</section>
+
+<section class="approach">
+  <h3>Il nostro approccio</h3>
+  <p>
+    Lo studio CDC mette il paziente al centro: comfort, trasparenza e soluzioni personalizzate
+    per risultati funzionali ed estetici di alto livello.
+  </p>
+</section>
+
+<footer id="contatti">
+  <h3>Contatti</h3>
+  <p>Roma – Via Sardegna 38</p>
+  <p>Cosenza – Viale Giacomo Mancini 154</p>
+  <p>📞 +39 388 345 2110</p>
+  <p>✉️ cristiandavide.crispino.doc@gmail.com</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #2c2c2c;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  background: #ffffff;
+  padding: 40px 80px 100px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #b89b5e;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 22px;
+  border: 1px solid #b89b5e;
+  color: #b89b5e;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #b89b5e;
+  color: white;
+}
+
+.hero-text {
+  margin-top: 100px;
+}
+
+.hero-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 80px;
+  text-align: center;
+}
+
+section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #b89b5e;
+  margin-bottom: 30px;
+}
+
+.services .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.services .grid div {
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+}
+
+footer {
+  background: #f9f9f9;
+  padding: 60px;
+  text-align: center;
+}
+console.log("Sito CDC caricato correttamente");
