@@ -6,6 +6,12 @@
 }
 
 body {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #f9f7f3 40%,
+    #ffffff 100%
+  );
   font-family: 'Montserrat', sans-serif;
   color: #2c2c2c;
   background: #ffffff;
@@ -14,6 +20,22 @@ body {
 
 /* SEZIONI ANIMATE */
 section {
+section {
+  margin: 0 auto;
+  max-width: 1200px;
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+}
+
+section:nth-of-type(even) {
+  background-color: #fafafa;
+}
+
+section:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+{
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s ease;
