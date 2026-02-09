@@ -25,7 +25,7 @@ body {
     #ffffff 0%,
     #f6f3ec 100%
   );
-  padding: 80px 160px 240px;
+  padding: 60px 80px 140px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -69,7 +69,7 @@ nav {
 
 nav h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 48px;   /* prima era 32 */
+  font-size: 48px;
   color: #b89b5e;
   letter-spacing: 2px;
 }
@@ -129,7 +129,7 @@ section p {
   color: #444;
 }
 
-/* SERVICES GRID */
+/* SERVICES GRID (SIMMETRICA) */
 .services .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -138,19 +138,23 @@ section p {
 }
 
 .services .grid div {
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-
-.services .grid div {
   padding: 22px;
   border: 1px solid #e5e5e5;
   border-radius: 12px;
   background: #ffffff;
+
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.services .grid div:hover {
+  transform: translateY(-4px);
+  border-color: #b89b5e;
 }
 
 /* STUDIO IMAGE */
@@ -164,7 +168,7 @@ section p {
 
 /* FOOTER */
 footer {
-  background: #f9f9f9;
+  background: #f9f7f9;
   padding: 60px;
   text-align: center;
   margin-top: 60px;
@@ -213,9 +217,8 @@ footer {
     padding: 70px 22px;
     margin: 30px 16px;
   }
-  
-  .services .grid {
-  grid-template-columns: 1fr;
-  }
 
+  .services .grid {
+    grid-template-columns: 1fr;
+  }
 }
