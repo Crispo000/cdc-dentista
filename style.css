@@ -64,6 +64,15 @@ section p {
 
 /* HERO */
 .hero {
+.hero {
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #f6f3ec 100%
+  );
+}
+
+{
   padding: 40px 80px 120px;
 }
 
